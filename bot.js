@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('message', async message => {
 var prefix = '$' /// البريفكس هون غيره يا بعد قلبي
-if(message.content.startsWith( prefix + 'infoinvite')) { //// وهون الامر طبعا
+if(message.content.startsWith( prefix + 'invites')) { //// وهون الامر طبعا
         let oi = message.mentions.users.first() ? message.mentions.users.first().id : message.author.id;
         let Tag = message.mentions.users.first() ? message.mentions.users.first().tag : message.author.tag;
         let Username = message.mentions.users.first() ? message.mentions.users.first().username : message.author.username;
